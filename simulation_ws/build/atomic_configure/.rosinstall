@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/divyanshi/turtlebot3_ws/simulation_ws/devel/setup.sh
