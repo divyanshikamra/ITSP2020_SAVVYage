@@ -75,7 +75,7 @@ def main():
     global regions_, position_, desired_position_, state_, yaw_, yaw_error_allowed_
     global srv_client_go_to_point_, srv_client_wall_follower_
     
-    rospy.init_node('bug0')
+    rospy.init_node('bttr1')
     
     sub_laser = rospy.Subscriber('/savvyage/laser/scan', LaserScan, clbk_laser)
     sub_odom = rospy.Subscriber('/odom', Odometry, clbk_odom)

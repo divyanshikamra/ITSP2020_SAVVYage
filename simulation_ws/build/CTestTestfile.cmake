@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("savvyage_gazebo")
 subdirs("teleop_twist_keyboard")
 subdirs("two-wheeled-robot-simulation/my_worlds")
 subdirs("motion_plan")

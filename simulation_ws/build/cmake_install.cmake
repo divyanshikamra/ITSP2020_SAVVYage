@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/divyanshi/turtlebot3_ws/simulation_ws/build/gtest/cmake_install.cmake")
+  include("/home/divyanshi/turtlebot3_ws/simulation_ws/build/savvyage_gazebo/cmake_install.cmake")
   include("/home/divyanshi/turtlebot3_ws/simulation_ws/build/teleop_twist_keyboard/cmake_install.cmake")
   include("/home/divyanshi/turtlebot3_ws/simulation_ws/build/two-wheeled-robot-simulation/my_worlds/cmake_install.cmake")
   include("/home/divyanshi/turtlebot3_ws/simulation_ws/build/motion_plan/cmake_install.cmake")

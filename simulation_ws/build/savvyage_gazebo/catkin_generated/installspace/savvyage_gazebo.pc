@@ -1,0 +1,8 @@
+prefix=/home/divyanshi/turtlebot3_ws/simulation_ws/install
+
+Name: savvyage_gazebo
+Description: Description of savvyage_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
