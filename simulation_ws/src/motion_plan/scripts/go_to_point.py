@@ -19,8 +19,8 @@ yaw_ = 0
 state_ = 0
 # goal
 desired_position_ = Point()
-desired_position_.x = 0
-desired_position_.y = 0
+desired_position_.x = 4
+desired_position_.y = 2
 desired_position_.z = 0
 # parameters
 yaw_precision_ = math.pi / 90 # +/- 2 degree allowed
