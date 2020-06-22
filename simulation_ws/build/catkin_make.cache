@@ -1,2 +1,0 @@
-motion_plan:savvyage_description:savvyage_gazebo:teleop_twist_keyboard:two-wheeled-robot-simulation/m2wr_description:two-wheeled-robot-simulation/my_worlds
--DCATKIN_DEVEL_PREFIX=/home/divyanshi/turtlebot3_ws/simulation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/divyanshi/turtlebot3_ws/simulation_ws/install -G Unix Makefiles
