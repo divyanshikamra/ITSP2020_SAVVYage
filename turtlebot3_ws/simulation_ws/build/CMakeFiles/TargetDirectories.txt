@@ -43,13 +43,6 @@
 /home/divyanshi/turtlebot3_ws/simulation_ws/build/savvyage_gazebo/CMakeFiles/_catkin_empty_exported_target.dir
 /home/divyanshi/turtlebot3_ws/simulation_ws/build/savvyage_gazebo/CMakeFiles/rebuild_cache.dir
 /home/divyanshi/turtlebot3_ws/simulation_ws/build/savvyage_gazebo/CMakeFiles/install.dir
-/home/divyanshi/turtlebot3_ws/simulation_ws/build/teleop_twist_keyboard/CMakeFiles/install/strip.dir
-/home/divyanshi/turtlebot3_ws/simulation_ws/build/teleop_twist_keyboard/CMakeFiles/edit_cache.dir
-/home/divyanshi/turtlebot3_ws/simulation_ws/build/teleop_twist_keyboard/CMakeFiles/list_install_components.dir
-/home/divyanshi/turtlebot3_ws/simulation_ws/build/teleop_twist_keyboard/CMakeFiles/test.dir
-/home/divyanshi/turtlebot3_ws/simulation_ws/build/teleop_twist_keyboard/CMakeFiles/install/local.dir
-/home/divyanshi/turtlebot3_ws/simulation_ws/build/teleop_twist_keyboard/CMakeFiles/rebuild_cache.dir
-/home/divyanshi/turtlebot3_ws/simulation_ws/build/teleop_twist_keyboard/CMakeFiles/install.dir
 /home/divyanshi/turtlebot3_ws/simulation_ws/build/motion_plan/CMakeFiles/install/strip.dir
 /home/divyanshi/turtlebot3_ws/simulation_ws/build/motion_plan/CMakeFiles/install/local.dir
 /home/divyanshi/turtlebot3_ws/simulation_ws/build/motion_plan/CMakeFiles/install.dir

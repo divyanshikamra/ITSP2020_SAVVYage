@@ -41,7 +41,7 @@ def clbk_laser(msg):
         'fright': min(min(msg.ranges[144:287]), 10),
         'front':  min(min(msg.ranges[288:431]), 10),
         'fleft':  min(min(msg.ranges[432:575]), 10),
-        'left':   min(min(msg.ranges[576:713]), 10),
+        'left':   min(min(msg.ranges[576:719]), 10),
     }
     
     take_action()
@@ -92,7 +92,7 @@ def take_action():
 
 def find_wall():
     msg = Twist()
-    msg.linear.x = 0.4
+    msg.linear.x = 0.2
     msg.angular.z = -0.3
     return msg
 
@@ -105,7 +105,7 @@ def follow_the_wall():
     global regions_
     
     msg = Twist()
-    msg.linear.x = 0.6
+    msg.linear.x = 0.5
     return msg
 
 def main():
@@ -115,7 +115,7 @@ def main():
     
     pub_ = rospy.Publisher('/cmd_vel', Twist, queue_size=1)
     
-    sub = rospy.Subscriber('/savvyage/laser/scan', LaserScan, clbk_laser)
+    sub = rospy.Subscriber('/m2wr/laser/scan', LaserScan, clbk_laser)
 
     srv= rospy.Service('wall_follower_switch', SetBool, wall_follower_switch)
 

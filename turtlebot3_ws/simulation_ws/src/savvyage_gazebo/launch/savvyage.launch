@@ -6,13 +6,12 @@
     <!-- more default parameters can be changed here -->
   </include>
   
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find savvyage_description)/urdf/savvyage.xacro'"/>
-
-    <arg name="x" default="0"/>
-    <arg name="y" default="0"/>
+  <!-- Spawn a robot into Gazebo -->
+    <arg name="x" default="-10"/>
+    <arg name="y" default="5"/>
     <arg name="z" default="0.5"/>
 
     <node name="savvyage_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
-          args="-urdf -param robot_description -model savvyage -x $(arg x) -y $(arg y) -z $(arg z)" />
+          args="-file $(find savvyage_description)/urdf/Bot.urdf -urdf -z 1 -model savvyage -x $(arg x) -y $(arg y) -z $(arg z)" />
   
 </launch>

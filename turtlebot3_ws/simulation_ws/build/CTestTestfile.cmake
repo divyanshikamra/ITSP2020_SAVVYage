@@ -6,6 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("savvyage_gazebo")
-subdirs("teleop_twist_keyboard")
 subdirs("motion_plan")
 subdirs("savvyage_description")

@@ -19,8 +19,8 @@ yaw_ = 0
 state_ = 0
 # goal
 desired_position_ = Point()
-desired_position_.x = 4
-desired_position_.y = 3
+desired_position_.x = 10
+desired_position_.y = -3
 desired_position_.z = 0
 # parameters
 yaw_precision_ = math.pi / 90 # +/- 2 degree allowed
@@ -66,7 +66,7 @@ def fix_yaw(des_pos):
     
     twist_msg = Twist()
     if math.fabs(err_yaw) > yaw_precision_:
-        twist_msg.angular.z = -0.7 if err_yaw > 0 else +0.7
+        twist_msg.angular.z = -0.7 if err_yaw > 0 else 0.7
     
     pub.publish(twist_msg)
     

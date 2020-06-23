@@ -13,45 +13,36 @@ def take_action(regions):
     angular_z = 0
     
     state_description = ''
-    d = 1
     
-    if regions['front'] > d and regions['fleft'] > d and regions['fright'] > d:
+    if regions['front'] > 1 and regions['fleft'] > 1 and regions['fright'] > 1:
         state_description = 'case 1 - nothing'
         linear_x = 0.6
         angular_z = 0
-    elif regions['front'] < d and regions['fleft'] > d and regions['fright'] > d:
+    elif regions['front'] < 1 and regions['fleft'] > 1 and regions['fright'] > 1:
         state_description = 'case 2 - front'
         linear_x = 0
-        angular_z = 0.3
-    elif regions['front'] > d and regions['fleft'] > d and regions['fright'] < d:
+        angular_z = 0.6
+    elif regions['front'] > 1 and regions['fleft'] > 1 and regions['fright'] < 1:
         state_description = 'case 3 - fright'
         linear_x = 0
-        angular_z = -0.3
-    elif regions['front'] > d and regions['fleft'] < d and regions['fright'] > d:
+        angular_z = -0.6
+    elif regions['front'] > 1 and regions['fleft'] < 1 and regions['fright'] > 1:
         state_description = 'case 4 - fleft'
         linear_x = 0
-        angular_z = 0.3
-    elif regions['front'] < d and regions['fleft'] > d and regions['fright'] < d:
+        angular_z = 0.6
+    elif regions['front'] < 1 and regions['fleft'] > 1 and regions['fright'] < 1:
         state_description = 'case 5 - front and fright'
         linear_x = 0
         angular_z = -0.6
-    elif regions['front'] < d and regions['fleft'] < d and regions['fright'] > d:
+    elif regions['front'] < 1 and regions['fleft'] < 1 and regions['fright'] > 1:
         state_description = 'case 6 - front and fleft'
         linear_x = 0
-        angular_z = 0.3
-    elif regions['front'] < d and regions['fleft'] < d and regions['fright'] < d and regions['left'] < d:
-        state_description = 'case 7 - front and fleft and fright and left'
-        linear_x = 0
-        angular_z = 0.5
-    elif regions['front'] < d and regions['fleft'] < d and regions['fright'] < d and regions['right'] < d:
-        state_description = 'case 7 - front and fleft and fright and right'
-        linear_x = 0
-        angular_z = -0.5
-    elif regions['front'] < d and regions['fleft'] < d and regions['fright'] < d:
+        angular_z = 0.6
+    elif regions['front'] < 1 and regions['fleft'] < 1 and regions['fright'] < 1:
         state_description = 'case 7 - front and fleft and fright'
         linear_x = 0
         angular_z = 0.6
-    elif regions['front'] > d and regions['fleft'] < d and regions['fright'] < d:
+    elif regions['front'] > 1 and regions['fleft'] < 1 and regions['fright'] < 1:
         state_description = 'case 8 - fleft and fright'
         linear_x = 0.6
         angular_z = 0
