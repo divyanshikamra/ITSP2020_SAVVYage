@@ -92,7 +92,7 @@ def main():
     
     rospy.init_node('bug1')
     
-    sub_laser = rospy.Subscriber('/m2wr/laser/scan', LaserScan, clbk_laser)
+    sub_laser = rospy.Subscriber('/savvyage/laser/scan', LaserScan, clbk_laser)
     sub_odom = rospy.Subscriber('/odom', Odometry, clbk_odom)
     
     rospy.wait_for_service('/go_to_point_switch')
