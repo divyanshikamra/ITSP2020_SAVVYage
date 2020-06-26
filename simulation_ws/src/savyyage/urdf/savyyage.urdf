@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="savyyage">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.149929149687969 0.0656732904513833 -0.0922338678122183"
+        rpy="0 0 0" />
+      <mass
+        value="2.09738280633032" />
+      <inertia
+        ixx="0.0169845783356244"
+        ixy="-8.36939636501596E-06"
+        ixz="6.95769457368112E-07"
+        iyy="0.0396539562803083"
+        iyz="8.22764549530396E-07"
+        izz="0.0248346476551759" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://savyyage/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://savyyage/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_wheel">
+    <inertial>
+      <origin
+        xyz="0 0 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.156514146001844" />
+      <inertia
+        ixx="0.000103390636279718"
+        ixy="0"
+        ixz="-1.10940270700837E-21"
+        iyy="0.000103390636279718"
+        iyz="1.22477129909407E-22"
+        izz="0.000196346996159313" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://savyyage/meshes/left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://savyyage/meshes/left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_wheel"
+    type="continuous">
+    <origin
+      xyz="0.33476 -0.07379 0.0034895"
+      rpy="1.5708 -0.10897 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_wheel">
+    <inertial>
+      <origin
+        xyz="1.52655665885959E-15 -3.38618022510673E-15 -0.010000000000001"
+        rpy="0 0 0" />
+      <mass
+        value="0.156514146001844" />
+      <inertia
+        ixx="0.000103390636279718"
+        ixy="6.7762635780344E-21"
+        ixz="-3.12357214248845E-19"
+        iyy="0.000103390636279718"
+        iyz="5.62659881703568E-19"
+        izz="0.000196346996159313" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://savyyage/meshes/right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://savyyage/meshes/right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_wheel"
+    type="continuous">
+    <origin
+      xyz="0.33476 0.25821 0.0034895"
+      rpy="-1.5708 1.064 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="laser_sensor">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 -0.045 0.02"
+        rpy="0 0 0" />
+      <mass
+        value="0.024" />
+      <inertia
+        ixx="2.6E-06"
+        ixy="-7.70949059800128E-22"
+        ixz="7.33349831960146E-23"
+        iyy="4E-06"
+        iyz="5.29395592033938E-23"
+        izz="5E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://savyyage/meshes/laser_sensor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://savyyage/meshes/laser_sensor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_laser_sensor"
+    type="fixed">
+    <origin
+      xyz="-0.043238 0.09221 0.07249"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="laser_sensor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <gazebo>
+    <plugin filename="libgazebo_ros_diff_drive.so" name="differential_drive_controller">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>20</updateRate>
+      <leftJoint>joint_right_wheel</leftJoint>
+      <rightJoint>joint_left_wheel</rightJoint>
+      <wheelSeparation>0.3</wheelSeparation>
+      <wheelDiameter>0.01</wheelDiameter>
+      <torque>0.1</torque>
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>bas_link</robotBaseFrame>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="Hokoyu_laser_scan">
+    <sensor type="ray" name="head_hokuyo_sensor">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>false</visualize>
+      <update_rate>20</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-1.570796</min_angle>
+            <max_angle>1.570796</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.10</min>
+          <max>10.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
+        <topicName>/savvyage/laser/scan</topicName>
+        <frameName>sensor_laser</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+</robot>

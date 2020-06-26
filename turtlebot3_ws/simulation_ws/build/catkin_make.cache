@@ -1,2 +1,0 @@
-motion_plan:savvyage_description:savvyage_gazebo
--DCATKIN_DEVEL_PREFIX=/home/divyanshi/turtlebot3_ws/simulation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/divyanshi/turtlebot3_ws/simulation_ws/install -G Unix Makefiles

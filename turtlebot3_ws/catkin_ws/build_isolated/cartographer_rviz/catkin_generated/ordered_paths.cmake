@@ -1,1 +1,0 @@
-set(ORDERED_PATHS "/home/divyanshi/turtlebot3_ws/catkin_ws/install_isolated/lib;/opt/ros/melodic/lib")

@@ -1,0 +1,8 @@
+prefix=/home/divyanshi/turtlebot3_ws/simulation_ws/install
+
+Name: savyyage
+Description: Description of savyyage
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
