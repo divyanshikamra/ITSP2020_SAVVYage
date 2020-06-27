@@ -1,0 +1,2 @@
+Bot:motion_plan:savvyage_description:savvyage_gazebo:savyyage:slam_gmapping/gmapping:slam_gmapping/slam_gmapping
+-DCATKIN_DEVEL_PREFIX=/home/divyanshi/turtlebot3_ws/simulation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/divyanshi/turtlebot3_ws/simulation_ws/install -G Unix Makefiles
